@@ -1,0 +1,140 @@
+:root {
+  /* ### Primary */
+
+  --Orange: hsl(25, 97%, 53%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Overpass";
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--Very-Dark-Blue);
+}
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main section .container {
+  background-color: var(--Dark-Blue);
+  width: 375px;
+  border-radius: 25px;
+  padding: 30px 25px;
+}
+@media (max-width: 400px) {
+  main section .container {
+    width: 320px;
+  }
+}
+main section .img img {
+  background-color: hsl(217, 12%, 63%, 0.1);
+  border-radius: 50%;
+  padding: 15px;
+}
+main section .container .text {
+  color: var(--White);
+  max-width: 100%;
+}
+main section h1 {
+  margin: 15px 0px;
+}
+main section .text h2 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--Light-Grey);
+}
+
+main section ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main section ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  margin: 20px 0px;
+  cursor: pointer;
+}
+main section #submit {
+  background-color: var(--Orange);
+  text-align: center;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 10px;
+  color: var(--White);
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+}
+main section ul li {
+  color: var(--Light-Grey);
+  cursor: pointer;
+}
+main section ul li:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+main section #submit:hover {
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+main section .onclick {
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+main section .sec-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main section .sec-container img {
+  max-width: 50%;
+  margin: 20px auto;
+}
+main section .sec-container h1 {
+  font-size: 15px;
+  background-color: hsl(217, 12%, 63%, 0.1);
+  border-radius: 15px;
+  color: var(--Orange);
+  font-weight: 400;
+  padding: 5px 10px;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+main section .sec-container h2 {
+  color: var(--White);
+  margin: 10px auto;
+}
+main section .sec-container h3 {
+  color: hsl(216, 12%, 54%);
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+}
+main section .hide {
+  display: none;
+}
